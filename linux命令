@@ -1,0 +1,29 @@
+linux运行级别的文件：/etc/inittab 切换到运行级别的指令 init 【0-5】
+面试题：如果root密码忘记怎么解决？答：切换到单用户模式下进行密码修改。因为单用户模式下，root登录不需要密码。卡机-enter-e-e-b  passwd root
+帮助指令：man ls  help ls
+文件目录类
+  >>pwd 显示当前的工作目录
+  >>ls 查看当前目录下所有内容 -a显示所有，包括隐藏的文件 -l以列表的形式显示
+  >>cd 切换目录 cd ~ 直接回到家目录
+  >>mkdir 创建目录 mkdir -p创建多级目录
+  >>rmdir 删除目录  只能删除空目录
+  >>rm -rf 删除目录及目录中的文件
+  >>touch 创建空文件 
+  >>cp 拷贝指令 cp 【选项】 source dest  ||  \cp 当发现目标目录下有相同文件，强制覆盖
+  >>mv 移动或重命名
+  >>cat 查看文件，只能看，不能改  cat -n 显示行号 cat -n a.txt |more（管道命令） 会分页显示 按空格翻页
+  >>more 分页查看
+  >>less 延迟加载，不看到不会加载，大文件用此命令
+  >>echo “内容” >> c.txt echo &path 输出环境变量
+  >>cal 日期 date time    data "+%y %m %d %H:%M%S"  cal 2020    data -s
+  >>head   查看文件前10行 head -n 5 file 前5行
+  >>tail -f 查看文件更新
+  >>ln 软连接  ln -s /root linkRoot
+  >>history 查看历史指令 history 10 显示10条
+  >>find 递归搜索文件find /home -name *.txt    find /homr -user root 按照用户名查找，是否有此用户的文件
+  
+  
+  
+  
+  
+  
