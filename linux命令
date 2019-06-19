@@ -3,7 +3,7 @@ linux运行级别的文件：/etc/inittab 切换到运行级别的指令 init �
 帮助指令：man ls  help ls
 文件目录类
   >>pwd 显示当前的工作目录
-  >>ls 查看当前目录下所有内容 -a显示所有，包括隐藏的文件 -l以列表的形式显示
+  >>ls 查看当前目录下所有内容 -a显示所有，包括隐藏的文件 -l以列表的形式显示 -h 显示文件大小
   >>cd 切换目录 cd ~ 直接回到家目录
   >>mkdir 创建目录 mkdir -p创建多级目录
   >>rmdir 删除目录  只能删除空目录
@@ -20,7 +20,23 @@ linux运行级别的文件：/etc/inittab 切换到运行级别的指令 init �
   >>tail -f 查看文件更新
   >>ln 软连接  ln -s /root linkRoot
   >>history 查看历史指令 history 10 显示10条
-  >>find 递归搜索文件find /home -name *.txt    find /homr -user root 按照用户名查找，是否有此用户的文件
+  >>find 递归搜索文件find /home -name *.txt    find /homr -user root 按照用户名查找，是否有此用户的文件  find /home -size +20M大于20M
+  >>locate 第一次执行需要先执行updatedb，建立数据库，这样，locate执行效率高
+  >>grep查找文本中包含的内容，“|”管道指令，会把前面的指令内容传递到后面的指令中，如cat hello.txt|grep -n -i yes  (i忽略大小写，n显示行号）
+  >>gzip压缩 gunzip 解压  只能解压和压缩文件 不会保留原始的文件  hello.txt.gz->hello.txt
+  >>zip与unzip  zip -r 递归压缩   zip -r xxx.zip /home/   unzip -d /opt/temp/  xxx.zip  压缩时会把所有目录压缩进去
+  >>tar -zcvf a.tar.gz 1.txt 2.txt 压缩 tar -zxvf a.tar.gz /opt/temp/ 解压，指定解压到的那个目录存在才能成功，否则会报错
+----------------------------------------------------------------------------------------------------------------------------------
+组管理与权限管理
+用户/etc/passwd
+用户组/etc/group
+文件： 1，所有者 ls -ahl  查看文件所有者 chown
+      2，所在组
+      3,其他组
+  
+  
+  
+
   
   
   
