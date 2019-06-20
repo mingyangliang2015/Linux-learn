@@ -1,0 +1,18 @@
+chkconfig 可改变服务在各个运行 下是否启动
+-----
+动态监控进程
+基本语法：
+    >>top -d -i -p
+
+
+查看系统网络情况
+    >>netstat -anp 
+    
+rpm包
+    >>rpm -qa|grep firefox
+    >>rpm -qi 查询安装软件的版本
+    >>rpm -ql 安装到那里去了
+    >>rpm -qf 根据安装包查软件
+    >>rpm -e 卸载 rpm -e -nodeps foo 强制删除
+rpm -ivh    h=hash 进度条 
+    
